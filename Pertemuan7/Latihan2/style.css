@@ -1,0 +1,68 @@
+body {
+  background-color: gray;
+}
+header .nav1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+  align-items: center;
+  padding: 10px;
+  margin: -10px;
+  margin-bottom: 0;
+}
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+  background-color: orange;
+  align-items: center;
+  font-weight: bold;
+
+  & .sosmed a {
+    text-decoration: none;
+    padding-right: 10px;
+    color: white;
+  }
+}
+.img-item {
+  width: 50px;
+}
+ul.menu {
+  display: flex;
+  list-style: none;
+
+  & li {
+    margin-right: 5px;
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+#banner {
+  margin: 10px;
+}
+.card {
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+  & .section1 {
+    margin-right: 5 px;
+
+    & conten1 {
+      background-image: url(https://via.placeholder.com/400x300);
+      background-size: cover;
+      width: 200px;
+
+      & span {
+        background-color: brown;
+        color: white;
+        padding: 5px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

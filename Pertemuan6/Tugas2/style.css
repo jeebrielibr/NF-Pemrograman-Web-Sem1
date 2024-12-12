@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+.boxatas {
+  background-color: #8bc34a;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.kotak {
+  background-color: #ffeb3b;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.panjang {
+  height: 200px;
+  flex-grow: 1;
+}
+.orange {
+  background-color: #ff5722;
+}
+
+.biru {
+  background-color: #03a9f4;
+}

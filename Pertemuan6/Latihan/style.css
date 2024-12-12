@@ -1,0 +1,39 @@
+.box {
+  width: 25%;
+  height: 500px;
+  margin: 10px;
+  float: right;
+}
+.box1 {
+  background-color: green;
+  background-image: url(img/funny.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box2 {
+  background-color: green;
+  background-image: url(img/funny.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box3 {
+  background-color: lightgreen;
+  background-image: url(img/funny.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box4 {
+  background-color: lightgreen;
+  background-image: url(img/funny.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+img {
+    height: 150px;
+    margin: 10px;
+}

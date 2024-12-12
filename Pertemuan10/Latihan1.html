@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan JS</title>
+
+    <script>
+      function fungsiwarna() {
+        let warna = document.getElementById("warna").value;
+        console.log("Pilih warna : " + warna);
+        document.body.style.backgroundColor = warna;
+      }
+      function kusrRupiah() {
+        let nilaiDollar = 15000;
+        let dollar = document.getElementById("dollar").value;
+        let rupiah = dollar * nilaiDollar;
+        document.getElementById("rupiah").value = rupiah;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <label for="nama">Pilih Warna:</label>
+      <select name="warna" id="warna" onchange="fungsiwarna()">
+        <option value="red">Merah</option>
+        <option value="blue">Biru</option>
+        <option value="yellow">Kuning</option>
+        <option value="green">Hijau</option>
+      </select>
+      <hr />
+      <label for="">Masukan Nilai Dolar :</label>
+      <input type="number" id="dollar" name="dollar" onkeyup="kusrRupiah()" />
+      <label for="">Masukan Nilai Rupiah :</label>
+      <input type="number" id="rupiah" name="rupiah" />
+    </form>
+  </body>
+</html>

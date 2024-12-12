@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah Dollar</title>
+</head>
+<body>
+    <!--
+    Prosedur :
+    1. Membuat form input Rupiah Dollar
+    2. tag p menampung hasil konversi
+    3. Deklarasi Variable
+    4. Hitung fungsi konversi
+    -->
+
+    <h1>Konversi Rupiah ke Dollar</h1>
+    <label for="rupiah">Masukan nilai Rupiah :</label>
+    <input type="number" id ="rupiah" onkeyup="rupiahkedollar()">
+    <p>Hasil Konversi ke dollar : <span id="hasildollar"></span></p>
+
+    <h1>Konversi Dollar ke Rupiah</h1>
+    <label for="dollar">Masukan nilai Dollar :</label>
+    <input type="number" id="dollar" onkeyup="dollarkerupiah()">
+    <p>Hasil Konversi ke Rupiah : <span id="hasilrupiah"></span></p>
+
+    <!-- Javascipt-->
+     <script>
+        // Deklarasi Variable
+        function rupiahkedollar(){
+            let rupiah = document.getElementById("rupiah").value;
+            let hasildollar = (rupiah / 15919).toFixed(2);
+            document.getElementById("hasildollar").innerHTML = hasildollar;
+        }
+        function dollarkerupiah(){
+            let dollar = document.getElementById("dollar").value;
+            let hasilrupiah = dollar * 15919;
+            document.getElementById("hasilrupiah").innerHTML = hasilrupiah;
+        }
+
+     </script>
+</body>
+</html>

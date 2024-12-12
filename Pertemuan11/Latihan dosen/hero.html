@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let jagoan = {
+        nama: "naruto",
+        power: 1000,
+        makan: function (kalori) {
+          this.power += kalori;
+        },
+        pukul: function (kekuatan, target) {
+          this.power = this.power - target;
+          target.power = target.power - kekuatan;
+        },
+      };
+      let musuh = {
+        nama: "sasuke",
+        power: 800,
+      }
+      function run() {
+        console.log(jagoan.nama + " power: " + jagoan.power);
+        console.log(musuh.nama + "power" + musuh.power);
+        jagoan.makan(200)
+        console.log("jagoan makan 200 kalori");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

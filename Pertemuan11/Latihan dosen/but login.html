@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function otentikasi() {
+            const admin = "amad"
+            const passadmin = "1234"
+
+            let uname = document.getElementById("username").value
+            let password = document.getElementById("password").value
+
+            if (uname == admin && password == passadmin) {
+                alert("berhasil")
+                return true
+            }else {
+                alert("gagal")
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="halamanuser.html" method="post">
+        username : <input type="text" name="username">
+        <br>
+        password : <input type="text" name="password">
+        <br>
+        <input type="submit" value="login" onclick="otentikasi()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <style>
+      .container {
+          border: 1px solid black;
+          width: 500px;
+          padding: 10px;
+      }
+      #massages{
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Set a fixed height */
+  width: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pesan" id="massages"></div>
+      <input type="text" id="chat" placeholder="Type a message..." />
+      <button onclick="newchat()">Kirim Pesan</button>
+      <button onclick="clear()">Clear</button>
+    </div>
+
+    <script>
+      function newchat() {
+        let massages = document.getElementById("massages");
+        let chat = document.getElementById("chat");
+
+        let chatElement = document.createElement("div");
+        chatElement.textContent = chat.value;
+        massages.appendChild(chatElement);
+        chat.value = "";
+      }
+      function clear() {
+        let massages = document.getElementById("massages");
+        massages.innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

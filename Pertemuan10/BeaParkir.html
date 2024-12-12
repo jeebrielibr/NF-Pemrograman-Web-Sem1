@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitung Biaya Parkir</title>
+  </head>
+  <body>
+    <div>
+      <!--Jam Masuk-->
+      <label for="jam_masuk">Jam Masuk:</label>
+      <input type="time" name="jam_masuk" id="jam_masuk" />
+      <br />
+      <br />
+      <!--Jam Keluar-->
+      <label for="jam_keluar">Jam Keluar:</label>
+      <input type="time" name="jam_keluar" id="jam_keluar" />
+    </div>
+    <br>
+    <div style="display: flex; width: 50%; justify-content: space-around;">
+      <!--Button Hitung-->
+      <button onclick="hitungbiayaparkir()">Hitung</button>
+      <!--Haisl-->
+      <p>Biaya Parkir: Rp. <span id="biaya">0</span></p>
+    </div>
+    <script src="BeaParkir.js"></script>
+  </body>
+</html>

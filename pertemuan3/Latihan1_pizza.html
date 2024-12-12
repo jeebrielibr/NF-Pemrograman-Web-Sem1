@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    .toppings-group {
+        inset-inline-end: e;
+      margin: 15px 0;
+    }
+    .number-pizzas {
+      margin: 15px 0;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+  </style>
+  <body>
+    <!--Heading-->
+    <h1>Form Pemesanan Pizza JEEBRIEL | On Demant</h1>
+    <!--Description-->
+    <p>
+      Our 12" wood-fired pizzas are available for delivery. Build your custom
+      pizza and we'll deliver it within an hour.
+    </p>
+
+    <!--Form information-->
+    <form action="blackgoosebistro.com/pizza.php" method="post">
+      <div class=".form-group">
+        <h2>Informasi Anda</h2>
+        <label for="name">Nama:</label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <label for="address">Alamat:</label>
+        <input type="text" name="address" id="address" />
+        <br />
+        <label for="telephone">Nomor Telepon:</label>
+        <input type="tel" id="telephone" name="telephone" required />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="">Instruksi Pemesanan</label>
+        <br />
+        <textarea name="inspem" id="inspem" maxlength="400"></textarea>
+      </div>
+      <!--Form pizza-->
+      <h2><strong>Desain Pizza Impianmu</strong></h2>
+      <h2>Ruang Pizza</h2>
+      <div class="pilih crust">
+        <label for="">Crust (pilih satu)</label>
+        <div>
+          <input type="radio" name="crust" id="crust1" />
+          <label for="crust1">Classic</label>
+        </div>
+        <div>
+          <input type="radio" name="crust" id="crust2" />
+          <label for="crust2">Multigrain</label>
+        </div>
+        <div>
+          <input type="radio" name="crust" id="crust3" />
+          <label for="crust3">Isian Keju</label>
+        </div>
+        <div>
+          <input type="radio" name="crust" id="crust4" />
+          <label for="crust4">Bebas Gluten</label>
+        </div>
+      </div>
+      <div class="toppings-group">
+        <label>Toppings (Choose as many as you want):</label>
+        <div>
+          <input
+            type="checkbox"
+            id="red-sauce"
+            name="toppings[]"
+            value="red-sauce"
+          />
+          <label for="red-sauce">Red sauce</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="white-sauce"
+            name="toppings[]"
+            value="white-sauce"
+          />
+          <label for="white-sauce">White sauce</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="mozzarella"
+            name="toppings[]"
+            value="mozzarella"
+          />
+          <label for="mozzarella">Mozzarella Cheese</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="pepperoni"
+            name="toppings[]"
+            value="pepperoni"
+          />
+          <label for="pepperoni">Pepperoni</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="mushrooms"
+            name="toppings[]"
+            value="mushrooms"
+          />
+          <label for="mushrooms">Mushrooms</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="peppers"
+            name="toppings[]"
+            value="peppers"
+          />
+          <label for="peppers">Peppers</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="anchovies"
+            name="toppings[]"
+            value="anchovies"
+          />
+          <label for="anchovies">Anchovies</label>
+        </div>
+      </div>
+      <div class="number-pizzas">
+        <label for="number">How many pizzas:</label>
+        <select id="number" name="number">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <br />
+      <div class="buttons">
+        <button type="submit">Bring me a pizza!</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
